@@ -1,0 +1,20 @@
+{
+  "playercheck": {
+    "settings": {
+      "name": "PlayerCheck",
+      "enabled": {
+        "name": "Enabled"
+      }
+    },
+    "command" : {
+      "missinguuid" : "§cYou are missing a uuid §7- §c/name <uuid>!",
+      "missingname" : "§cYou are missing a name §7- §c/uuid <name>!",
+      "nonamefound" : "§cCould not find a matching name!",
+      "nouuidfound" : "§cCould not find a matching uuid!",
+      "namefound" : "§aName: §8[{name}§8]",
+      "uuidfound" : "§aUUID: §8[{uuid}§8]",
+      "notavalidname" : "§7{name} §cis not a valid name!",
+      "notavaliduuid" : "§7{uuid} §cis not a valid uuid!"
+    }
+  }
+}
