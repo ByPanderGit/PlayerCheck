@@ -22,6 +22,8 @@ public class UUIDCommand extends Command {
 
   @Override
   public boolean execute(String prefix, String[] arguments) {
+    if(!PlayerCheck.get().configuration().uuid().get())
+      return false;
     if (arguments.length < 1) {
       this.displayMessage(Component.text(PlayerCheck.get().prefix() + I18n.translate("playercheck.command.missingname")));
       return true;

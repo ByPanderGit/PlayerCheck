@@ -23,6 +23,8 @@ public class NameCommand extends Command {
 
   @Override
   public boolean execute(String prefix, String[] arguments) {
+    if(!PlayerCheck.get().configuration().name().get())
+      return false;
     if (arguments.length < 1) {
       this.displayMessage(Component.text(PlayerCheck.get().prefix() + I18n.translate("playercheck.command.missinguuid")));
       return true;
